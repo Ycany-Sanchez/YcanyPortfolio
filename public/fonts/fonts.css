@@ -1,0 +1,9 @@
+/* Inter Tight, unmodified Latin variable font, SIL Open Font License 1.1.
+   See LICENSE.txt. Served locally; no external font request is required. */
+@font-face {
+  font-family: "Inter Tight";
+  src: url("./inter-tight-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}

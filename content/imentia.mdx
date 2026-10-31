@@ -1,0 +1,31 @@
+## The problem
+
+A familiar face can carry information that is difficult to recall: a name, a relationship, or the context of a previous conversation. IMentia explores a way to bring those records together for people with dementia and their caregivers.
+
+The Java application connects face recognition with saved profiles and meeting notes. Its interface aims to make the retrieved information clear and readable. The project focuses on the application workflow of recognizing a profile and retrieving its context.
+
+## My contribution
+
+My role was **backend developer**. The backend work sits behind the interaction between camera input, saved person records, image handling, and meeting history.
+
+The project's overall interface and its intended use are team-level context. The contribution presented here focuses on application logic and the coordination of local records.
+
+## How it works
+
+OpenCV supports the face-recognition component. Registered profiles hold names, relationships, and associated image information. When the application matches camera input to a profile, it can retrieve that person's details alongside notes from earlier meetings.
+
+Java services coordinate recognition and persistence, and structured files hold the local records. Meeting notes preserve previous interactions in chronological order. Maven manages the Java project's build and dependencies.
+
+The public source describes a facade that gives the interface a single entry point for recognition-related operations. This keeps the UI from needing to coordinate each storage, image, and recognition operation itself.
+
+## Engineering decisions
+
+Recognition is useful to the application only when it leads to the appropriate person record. Bringing image handling, profile lookup, and saved notes behind a coordinating layer makes that flow easier to reason about.
+
+The implementation uses local file storage for profiles and meeting records. Access control, encryption, and data lifecycle management are separate concerns for a production version.
+
+## Evidence and limitations
+
+The source repository documents face recognition, saved profiles, and meeting records. It provides a concrete example of Java backend work connecting computer vision with application data.
+
+Recognition performance depends on camera conditions and available reference images. Measured accuracy, field testing, and clinical outcomes are outside the evidence available for this application project.

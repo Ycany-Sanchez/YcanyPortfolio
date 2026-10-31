@@ -1,0 +1,31 @@
+## The problem
+
+Meals, exercise, and long periods at a computer are often tracked separately. +inHealth brings them into a desktop application: users record food and physical activity, retrieve nutrition information, and receive prompts to move after a period of continuous computer use.
+
+The project was built by a team of five for **CSIT228 — Object-Oriented Programming 2**. It was also an exercise in making application structure understandable: separating interface behavior, business rules, external data, and persistence.
+
+## My contribution
+
+I worked as **backend developer, API integrator, and database developer**. My contribution covered the nutrition API's business logic, backend services, database operations, and the rules behind logging and progress tracking.
+
+I collaborated within a five-person team, with my work concentrated on services, integrations, persistence, and business rules.
+
+## How it works
+
+JavaFX provides the desktop interface. Controllers connect user actions to services, while repository and DAO layers handle persistence over MySQL. Users can log their food intake and exercise, then review progress through the application dashboard.
+
+The nutrition integration fetches external data and adapts it into the application's food models. Its request flow includes retries on failure. An observer monitors the active desktop application and can trigger an activity prompt after a configured period of continuous use.
+
+The stack includes Java, JavaFX, MySQL, Gson, Maven, and JUnit. The source repository is linked from this page so the implementation can be inspected directly.
+
+## Engineering decisions
+
+The architecture keeps changes to one part of the application from being spread across every screen. A nutrition provider's response needs to be translated into the application's own model before the rest of the system uses it. Database access similarly belongs behind a persistence boundary, rather than inside view code.
+
+MVC, repositories, and DAOs made those boundaries explicit in a course focused on design patterns and SOLID principles. The team agreed to write the project code themselves. That constraint made understanding the interactions between layers part of the work, rather than simply assembling a finished interface.
+
+## Evidence and limitations
+
+The result is a source-available JavaFX health tracker with meal and activity logging, nutrition lookups, and movement prompts. It demonstrates backend, integration, and database work within a team project.
+
+The available evidence documents the application and its architecture. User adoption and health outcomes have not been measured. Nutrition information depends on the external service and the quality of the user's entries.

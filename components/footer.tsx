@@ -1,0 +1,4 @@
+import Link from "next/link";
+import {profile} from "@/lib/projects";
+import {Arrow,Star} from "./icons";
+export function Footer(){return <footer className="site-footer"><Link className="wordmark" href="/">YCANY<span>.</span></Link><div className="footer-socials"><a href={profile.github} target="_blank" rel="noreferrer">GitHub <Arrow/></a><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <Arrow/></a><a href="https://leetcode.com/u/Ikanida/" target="_blank" rel="noreferrer">LeetCode <Arrow/></a><a href={"mailto:"+profile.email}>Email <Arrow/></a></div><span className="mono footer-location">CEBU, PH <Star/></span><div className="footer-bottom mono"><span>© {new Date().getFullYear()} YCANY SANCHEZ</span><span>THOUGHTFULLY DESIGNED. PURPOSEFULLY BUILT.</span><a href="#top">BACK TO TOP ↑</a></div></footer>}

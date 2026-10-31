@@ -1,0 +1,37 @@
+## The problem
+
+Harmful messages can appear inside the same conversations people use every day. Screening a message is only one part of the interaction: a blocked message also needs an explanation that helps the reader understand the concern.
+
+BantAI Buddy explores both steps through a Chrome extension. Its content scripts observe conversation changes, request AI-assisted analysis, and blur messages flagged by the model. A separate explanation flow turns a flag into an educational response.
+
+## My contribution
+
+I contributed as **ideator, backend developer, and API integrator**. My work connected the browser-side requests with the AI processing layer and helped shape the product's direction.
+
+The extension interface, observers, caching, and testing infrastructure are parts of the team's system. My individual contribution centered on the product idea, backend, and API integration.
+
+## How it works
+
+The 1.0.0 architecture separates a Manifest V3 Chrome extension from a Node.js and Express backend. A supervisor coordinates application and conversation observers, a message processor, persistent caching, and the blur and popup managers.
+
+The backend provides three interfaces:
+
+- `POST /api/analyze` accepts message text and returns `shouldBlock` and `analysis`.
+- `POST /api/explain` accepts the text and analysis and returns `childComment` and `explanation`.
+- `GET /api/health` reports service status and LLM connectivity.
+
+For analysis, the backend combines the message with a system prompt and requests a structured response from the LLM. The extension uses the returned decision to update the page. Explanation requests use a separate prompt so the educational response has a distinct purpose from the classification response.
+
+## Engineering decisions
+
+Keeping model communication in the backend gives the extension a consistent API contract and a central place for prompt orchestration. The configuration supports local or remote LLM endpoints. Local operation changes where processing takes place; latency and data handling still depend on the chosen provider and configuration.
+
+Persistent caching is intended to avoid repeating analysis for the same content after reloads. A Python safety regression suite checks model responses against a golden dataset. The cache and regression suite give the team concrete points to inspect when evaluating repeat requests and model behavior.
+
+## Evidence and limitations
+
+The hackathon project achieved **Top 2 among 28 teams** at the **IBPAP Can You HackIt? Challenge 2025**, with mentorship from Accenture professionals. The team rebuilt the system during the competition. The event announcement below documents the result.
+
+Earlier hackathon descriptions include multilingual explanations and parental Gmail alerts. The supplied 1.0.0 architecture focuses on analysis and explanation, so it does not establish that Gmail delivery is part of that version.
+
+Two documented limitations matter to the experience: frequent DOM changes can trigger redundant requests, and LLM response time can allow a brief appearance of unblurred content. Dictionary fallback and customizable rules are future improvements, not current guarantees. Detection accuracy and response time have not been measured in the available project evidence.

@@ -1,0 +1,2 @@
+import Link from "next/link";import {Arrow,Star} from "@/components/icons";
+export default function NotFound(){return <main id="main" className="not-found section-dark section-pad"><span className="mono">404 / A CONNECTION NOT FOUND</span><Star/><h1>A little off<br/>the beaten path<span className="text-blue">.</span></h1><p>This page doesn’t exist, but there’s plenty of work to explore.</p><Link className="text-link" href="/">Back to the portfolio <Arrow/></Link></main>}

@@ -1,0 +1,31 @@
+## The problem
+
+Recipe search often begins with a dish someone wants to make. FoodPantry reverses that starting point: enter the ingredients already available and look for recipes that use them.
+
+The Android project explores the connection between a focused mobile interaction and an external recipe service. It is presented here as **FoodPantry**, matching the repository name; the repository's README also uses the name PantryPlanner.
+
+## My contribution
+
+My role was **full-stack developer**, covering the user-facing Android application, its application logic, and API integration.
+
+That scope meant connecting what the person enters to the request sent to the recipe service, and connecting the returned data to a useful result on screen. It also gave me experience working across interface and integration concerns within a Kotlin application.
+
+## How it works
+
+Users enter ingredients from their pantry. The application sends recipe requests through a Retrofit integration with the Spoonacular API and presents matching recipe information.
+
+The Kotlin source separates models, presenters and contracts, API service definitions, data-transfer models, and mapping code. Recipe and ingredient repositories sit between those parts of the application. The repository also contains dashboard, account, profile, and recipe screens.
+
+The ingredient-to-recipe flow is the central capability described by this case study.
+
+## Engineering decisions
+
+The integration boundary is a useful place to keep external recipe data separate from screen behavior. Retrofit handles the HTTP connection, while service definitions and mapping code describe how the provider's data becomes something the application can use.
+
+Starting from ingredients also gives the interface a specific task. The user does not need to browse an unrestricted catalog before the application has enough information to make a request.
+
+## Evidence and limitations
+
+The source repository contains an implemented Android application, including ingredient entry, recipe-related screens, and the Spoonacular integration. It is available through the source link on this page.
+
+The available evidence is the source implementation. Recipe availability depends on the external service and its API limits. Public release, production usage, and changes in food waste have not been documented.

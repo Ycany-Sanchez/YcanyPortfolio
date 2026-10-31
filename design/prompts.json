@@ -1,0 +1,38 @@
+{
+  "tool": "Built-in image_gen (not CLI)",
+  "sharedBrief": "Cinematic editorial full-stack developer portfolio. Ink #101114, warm ivory #F3F0E9, cobalt #245BFF. Oversized grotesk typography, fine mono labels, asymmetric flat layouts, large readable section-specific references. Final website uses verified owner content instead of generated claims.",
+  "sections": [
+    [
+      "hero",
+      "Horizontal 1536x1024. Only the homepage hero. Ink canvas, top navigation YCANY. at left and Work, Expertise, About, Let's talk with tiny cobalt dot at right. Main composition asymmetrical, huge ivory heading at left 'Ideas into' then 'working systems.' with 'systems.' cobalt. Small upper eyebrow 'FULL-STACK DEVELOPER / CEBU, PH'. Right side signature abstract topological data-flow sphere made of silver hairline arcs and small cobalt signals, clearly code-native line geometry, no product photo. Lower left small text 'I connect APIs, build backends, and turn complex workflows into useful digital experiences.' Underline text link 'Explore selected work' and round arrow button. Bottom fine rule, 01—05 and SCROLL TO EXPLORE. Whole heading and nav visible above fold. Sculptural quiet and precise."
+    ],
+    [
+      "work",
+      "Horizontal 1536x1024. Only selected work section, warm ivory canvas. Small '(01 — SELECTED WORK)' left, big heading 'Built around real problems.' Two dramatically sized editorial project cover areas: large left cobalt blue architectural ocean contour illustration with PAROLA small data-flow labels and title Parola below; narrower right charcoal cover with oversized ivory outlined shield geometry, BANTAI BUDDY lettering and subtle 'Message → Analysis → Explanation' diagram, title below. Clear caption 'Concept illustration' on decorative cover, these are not product screenshots. Bottom fine rule and small next project +inHealth. No rounding or cards inside cards."
+    ],
+    [
+      "services",
+      "Horizontal 1536x1024. Only expertise/services section, ivory canvas. Upper left small '(02 — EXPERTISE)', massive heading 'The connections make the difference.' upper right a short quiet paragraph. Below three spacious horizontal ruled editorial rows numbered 01 Backend & APIs, 02 AI integration, 03 Workflow automation, each with concise small paragraph right and large thin plus/arrow icon. Lower slim strip of technology names Java / Python / Node.js / REST / n8n / MySQL. Calm premium typography."
+    ],
+    [
+      "process",
+      "Horizontal 1536x1024. Only process section, ink canvas with ivory type and cobalt accents. Small '(03 — THE APPROACH)', large headline 'From a good question to a working system.' Below a horizontal fine cobalt signal path joining three stations 01 Understand, 02 Build, 03 Refine, spacious textual descriptions below each. One decorative giant faint 03 at far right. Flat spacious layout, meaningful sequence, no rounded cards."
+    ],
+    [
+      "about",
+      "Horizontal 1536x1024. Only about section, warm ivory. Small '(04 — A LITTLE CONTEXT)', oversize 'Curious by nature. Practical by choice.' left. Right big quiet neutral photographic placeholder labelled portrait, do not invent real user's face, use abstract silhouette. Below left text identifies Ycany, computer science student at CIT-U Cebu, backend and integration experience through school and hackathons. Below thin ruled recognition list Parola / PSC XI Central Visayas / Iloilo AI Fest and BantAI Buddy / IBPAP Challenge. Link 'Download résumé'. Asymmetric editorial grid."
+    ],
+    [
+      "contact",
+      "Horizontal 1536x1024. Only contact section and footer, cobalt blue background and ivory typography. Large left 'Something in mind?' then 'Let’s connect the dots.' Quiet text invitation. Right clean minimal project inquiry form with underline fields Name, Email, Project type, Project goals, Budget (optional), Timeline and ivory submit strip 'Send project brief ↗'. Below full-width thin rule with YCANY. and GitHub LinkedIn LeetCode Email links, CEBU PH. Readable high contrast, no ornamental pills or cards."
+    ],
+    [
+      "case-study",
+      "Horizontal 1536x1024. Case-study page opening for BantAI Buddy. Warm ivory canvas, YCANY. top left Back to work top right. Small 'CASE STUDY / AI & ONLINE SAFETY', gigantic 'BantAI Buddy' heading left. Right small role Ideator / Backend developer / API integrator. Center huge charcoal diagram panel with thin cobalt paths from Browser extension → Express API → LLM engine, and two return branches Analysis and Explanation. Below quiet caption 'System architecture · Node.js / Express / Chrome Manifest V3'. Visible beginning of lower two-column Problem / My contribution. No fake app screenshots."
+    ],
+    [
+      "mobile",
+      "Portrait 1024x1536. Mobile homepage hero and beginning of selected work, without phone frame. Ink canvas, YCANY. left and Menu right. Generous 24px-like margins, huge wrapped heading Ideas into / working / systems. with cobalt final word, clear readable text Full-stack developer building APIs, AI integrations and automation. Smaller topological line sphere partially appears lower right, never overlaps text. Explore selected work link and arrow. At bottom transition to ivory with '(01 — SELECTED WORK)' and start Parola cover. Premium mobile reflow, not shrunk desktop."
+    ]
+  ]
+}

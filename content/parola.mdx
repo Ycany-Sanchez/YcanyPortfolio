@@ -1,0 +1,36 @@
+## The problem
+
+Useful fishing information depends on data that is scattered across different sources. Sea surface temperature, chlorophyll concentration, ocean currents, bathymetry, and historical fishing activity each describe part of the picture. Turning those inputs into something a person can act on is a separate challenge.
+
+Parola is Team TIKI's response: a fisheries intelligence project designed around Filipino fisherfolk, including people without reliable internet access or a smartphone. Its intended delivery channel is SMS, so access to an advisory does not depend on opening a web dashboard offshore.
+
+## My contribution
+
+My roles covered product ideation, API integration, backend development, and workflow development. I helped shape the direction of the project and worked on the connections between its data sources, processing, and advisory workflow.
+
+The prediction concept and project presentation are team work. The scope of my contribution is the backend and integration work described here; the competition recognition belongs to Team TIKI.
+
+## How it works
+
+The system brings oceanographic and satellite data into a processing workflow. Machine learning is used in the project to identify potential fishing grounds from those inputs. API integrations and cloud processing connect the data sources, while n8n supports the automated workflow for gathering, processing, and distributing information.
+
+The proposed delivery flow is deliberately simple:
+
+1. Collect the relevant ocean and satellite data.
+2. Process the inputs into potential fishing-ground information.
+3. Prepare fishing advisories and weather alerts.
+4. Distribute the advisory through SMS.
+
+This describes the project's intended architecture. It does not establish that every stage is deployed as a continuously operating service.
+
+## Engineering decisions
+
+The important connection is between the data pipeline and the delivery channel. Designing for SMS keeps attention on the information a person actually receives, including when a web dashboard is out of reach.
+
+Using API integrations and automated workflows also separates recurring data collection from the presentation of an advisory. Provider-specific details, prediction accuracy, and delivery performance remain areas for implementation evidence and measurement.
+
+## Evidence and limitations
+
+Parola received **Top 25 qualifier** recognition and **Special Awardee — Best Logo** at **Philippine Startup Challenge 11 — Central Visayas**. It separately became a **Top 5 finalist** at the **Iloilo AI Fest Hackathon Championship 2026**. The announcements below document the qualifier and finalist results.
+
+The documented outcomes are the competition results. Production adoption, prediction accuracy, and changes in catch, fuel use, income, or safety have not been measured in the evidence available for this case study.
